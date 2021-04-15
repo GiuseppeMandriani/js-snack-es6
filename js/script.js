@@ -88,13 +88,13 @@ templateList.innerHTML = `
 <h5>Nome: ${biciUno.nome} Peso:${biciUno.peso}kg</h5>
 
 <h4>Bici2:</h4>
-<h5>Nome: ${biciDue.nome} Peso:${biciUno.peso}kg</h5>
+<h5>Nome: ${biciDue.nome} Peso:${biciDue.peso}kg</h5>
 
 <h4>Bici3:</h4>
-<h5>Nome: ${biciTre.nome} Peso:${biciUno.peso}kg</h5>
+<h5>Nome: ${biciTre.nome} Peso:${biciTre.peso}kg</h5>
 
 <h4>Bici4:</h4>
-<h5>Nome: ${biciQuattro.nome} Peso:${biciUno.peso}kg</h5>`;
+<h5>Nome: ${biciQuattro.nome} Peso:${biciQuattro.peso}kg</h5>`;
 
 
 
