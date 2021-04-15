@@ -136,7 +136,9 @@ const teams = [
     },
 ];
 
-console.table(teams);
+// console.table(teams);
+
+// Generazioni punti e falli
 
 for (let i = 0; i < teams.length; i++) {
         let team = teams[i];
@@ -149,6 +151,8 @@ for (let i = 0; i < teams.length; i++) {
 
 const newArray = [];
 
+// Inserimento nel nuovo Array
+
 for( let i = 0; i < teams.length; i++){
     newArray.push({
         name: teams[i].name,
@@ -159,6 +163,31 @@ for( let i = 0; i < teams.length; i++){
 console.log('Nuovi risultati')
 
 console.table(newArray);
+
+// Fase 2 Stampa a schermo
+
+const squadre = document.getElementById('name');
+
+const points = document.getElementById('points');
+
+
+ squadre.innerHTML = `
+ <h3>Squadre</h3>
+ <span>${newArray[0].name}</span>
+ <span>${newArray[1].name}</span>
+ <span>${newArray[2].name}</span>
+ <span>${newArray[3].name}</span>
+ `
+
+ points.innerHTML = `
+ <h3>Punteggio</h3>
+ <span>${newArray[0].points}</span>
+ <span>${newArray[1].points}</span>
+ <span>${newArray[2].points}</span>
+ <span>${newArray[3].points}</span>
+ `
+
+
 
 
 

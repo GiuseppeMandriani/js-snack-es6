@@ -18,3 +18,17 @@ h1{
 
 }
 
+.classifica{
+    display: flex;
+}
+
+.classifica .name{
+    display: flex;
+    flex-direction:column;
+}
+
+.classifica .points{
+    display: flex;
+    flex-direction:column;
+}
+
