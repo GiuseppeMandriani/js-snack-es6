@@ -40,10 +40,20 @@ const bici = [
     biciQuattro,
 ];
 
+
+// for(let i = 0; i < bici.length; i++){
+//     console.log(bici[i]);
+
+//     biciModel = bici[i];
+// }
+
+// console.log(biciModel.nome);
+
+
 // Imposto la prima con indice 0 parametro di confronto
 
 let biciLeggera = bici[0];
-console.log(biciLeggera);
+// console.log(biciLeggera);
 
 // Itero nell'Array per confronto
 
@@ -59,9 +69,11 @@ for(let i = 1; i < bici.length; i++) {
 
 console.log(biciLeggera);
 
-// FASE 2 Stampa a schermo con diplay Literal
+// FASE 2 Stampa a schermo con display Literal
 
-var template = document.getElementById('weight');
+const template = document.getElementById('weight');
+
+const templateList = document.getElementById('list')
 
 template.innerHTML = `
 <span class="bici">La bici con il peso inferiore è la: ${biciLeggera.nome}</span>
@@ -69,6 +81,25 @@ template.innerHTML = `
     <span>Il suo peso è di ${biciLeggera.peso}kg</span>
 </div>`
 ;
+
+templateList.innerHTML = `
+<h3>Modelli</h3>
+<h4>Bici1:</h4>
+<h5>Nome: ${biciUno.nome} Peso:${biciUno.peso}kg</h5>
+
+<h4>Bici2:</h4>
+<h5>Nome: ${biciDue.nome} Peso:${biciUno.peso}kg</h5>
+
+<h4>Bici3:</h4>
+<h5>Nome: ${biciTre.nome} Peso:${biciUno.peso}kg</h5>
+
+<h4>Bici4:</h4>
+<h5>Nome: ${biciQuattro.nome} Peso:${biciUno.peso}kg</h5>
+`;
+
+
+
+
 
 
 
