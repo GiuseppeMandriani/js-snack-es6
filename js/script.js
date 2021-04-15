@@ -94,8 +94,75 @@ templateList.innerHTML = `
 <h5>Nome: ${biciTre.nome} Peso:${biciUno.peso}kg</h5>
 
 <h4>Bici4:</h4>
-<h5>Nome: ${biciQuattro.nome} Peso:${biciUno.peso}kg</h5>
-`;
+<h5>Nome: ${biciQuattro.nome} Peso:${biciUno.peso}kg</h5>`;
+
+
+
+
+/**
+ * 
+ * // Snack 2
+ * 
+ * Creare un array di oggetti di squadre di calcio. Ogni squadra avrà diverse proprietà: nome, punti fatti, falli subiti.
+ * IL Nome sarà l'unica proprietà da compilare, le altre saranno tutte settate a 0.
+ * Generare numeri random al posto degli 0 nelle proprietà:
+ * - Punti fatti e falli subiti
+ * Infine usando la destrutturazione creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti e stampiamo tutto in console.
+ * 
+ */
+
+// FASE 1 CREAZIONE Array
+
+const teams = [
+    {
+        name: 'Milan',
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: 'Roma',
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: 'Inter',
+        points: 0,
+        fouls: 0,
+    },
+    {
+        name: 'Napoli',
+        points: 0,
+        fouls: 0,
+    },
+];
+
+console.table(teams);
+
+for (let i = 0; i < teams.length; i++) {
+        let team = teams[i];
+    
+         team.points = randomNumber(0,30);
+         team.fouls = randomNumber(0,90);
+     };
+
+    //  console.table(teams);
+
+const newArray = [];
+
+for( let i = 0; i < teams.length; i++){
+    newArray.push({
+        name: teams[i].name,
+        points: teams[i].points,
+    })
+    }
+
+console.log('Nuovi risultati')
+
+console.table(newArray);
+
+
+
+
 
 
 
