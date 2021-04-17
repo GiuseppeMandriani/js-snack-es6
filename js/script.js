@@ -1,3 +1,25 @@
+// ES5 
+
+// const myArray = ['Paolo', 'Luca', 'Giorgio','Aldo','Giovanni','Lorenzo'];
+
+// let min = parseInt(prompt('Inserisci un numero tra 0 e 5'));
+// let max = parseInt(prompt('Inserisci un numero tra 0 e 5'));
+
+// function filterArray(array, min, max){
+//     for(var i = 0; i < array.length; i++){
+//         const 
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
 // Snack with ES 6
 
 // 
@@ -40,14 +62,17 @@ const bici = [
     biciQuattro,
 ];
 
+// let biciModel = [];
 
-// for(let i = 0; i < bici.length; i++){
-//     console.log(bici[i]);
+// bici.forEach((element) =>{
+//     // console.log(element.nome);
 
-//     biciModel = bici[i];
-// }
+//      biciModel += element.nome
 
-// console.log(biciModel.nome);
+//     return biciModel;
+// });
+
+// console.log(biciModel);
 
 
 // Imposto la prima con indice 0 parametro di confronto
@@ -67,7 +92,7 @@ for(let i = 1; i < bici.length; i++) {
     };
 };
 
-console.log(biciLeggera);
+// console.log(biciLeggera);
 
 // FASE 2 Stampa a schermo con display Literal
 
