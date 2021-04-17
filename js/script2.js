@@ -131,7 +131,7 @@ const randomNumber = (min,max) => {
 };
 
 
-// Metodo forEach non efficace perchè sovrascrive dati iniziali
+// Metodo forEach non efficace perchè sovrascrive dati iniziali *************
 
 // teams.forEach((element,index) =>{
 //     // console.log(element.name)
@@ -144,7 +144,7 @@ const randomNumber = (min,max) => {
 // console.log('after', teams);
 
 
-// Metodo con MAP
+// Metodo con MAP ***************
 
 const newArrayMap = teams.map((element,index) =>{
     element.points = randomNumber(0,30);
@@ -183,6 +183,53 @@ console.table(updateTeams); // Classifica con nome squadra e falli fatti
  * 
  */
 
+
+// Fase 1 Creazione Array 
+
+const myArray = ['Paolo', 'Fabio', 'Lorenzo','Luca','Giuseppe','Aldo'];
+
+console.log(myArray)
+
+// Chiedo numeri all'utente min e max
+
+let min = parseInt(prompt('Inserisci un numero tra 0 e 5'));
+
+// Verifica inserimento numero
+
+while(isNaN(min) || min < 0 || min > myArray.length){
+    min = parseInt(prompt('Inserisci un numero tra 0 e 5'));
+};
+
+let max= parseInt(prompt('Inserisci un numero tra 0 e 5'));
+
+// Verifica secondo numero
+while(isNaN(max) || max < min || max > myArray.length){
+    min = parseInt(prompt('Inserisci un numero tra 0 e 5'));
+};
+
+
+// Metodo Filter ***************
+
+// const arrayEs = myArray.filter((element,index) => {
+//     return min <= index && max >= index;
+// })
+
+// console.log(arrayEs);
+
+
+// Metodo forEach ***************
+
+// Creo array dove inserire elementi
+
+let neArr = [];
+
+myArray.forEach((element,index) =>{
+    if(min <= index && max >= index){
+        neArr.push(element);
+    };
+});
+
+console.log(neArr);
 
 
 /**
