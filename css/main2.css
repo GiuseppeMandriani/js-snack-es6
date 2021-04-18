@@ -6,8 +6,9 @@
 }
 
 body {
-    background-color: #232946;
-    color: #fffffe;
+    background-color: #fde9eb;
+    color: #232946;
+
     font-family: 'Roboto', sans-serif;
 }
 
@@ -25,7 +26,12 @@ h1 {
     font-weight: 400;
     margin-bottom: 2rem;
     text-align: center;
-    color: #fdfdfd;
+    color: #232946;
+
+}
+
+h2{
+    font-weight: 400;
 }
 
 /* List */
@@ -37,10 +43,10 @@ h1 {
 .list-item li {
     display: flex;
     justify-content: space-between;
-    color: #eebbc3;
+    color: #232946;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px dotted #eebbc3b9;
+    border-bottom: 1px dotted #232946 ;
     cursor: pointer;
 }
 
