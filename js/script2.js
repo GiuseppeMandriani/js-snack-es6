@@ -182,10 +182,11 @@ console.table(newArrayMap); // Classifica completa
 // Metodo con map
 
 const updateTeams = newArrayMap.map((element)=>{
+    console.log(element.name);
+    console.log( 'Falli fatti ', element.fouls);
     return{
         name: element.name,
-        fouls: element.fouls,
-    };
+        fouls: element.fouls,}
 });
 
 
