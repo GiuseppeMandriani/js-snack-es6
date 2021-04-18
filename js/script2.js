@@ -44,7 +44,6 @@ const bici = [
 
 // Imposto la prima con indice 0 parametro di confronto
 
-let biciPiuLeggera = bici[0];
 // console.log('Primo elemento ', biciPiuLeggera);
 
 // console.log(biciPiuLeggera.peso)
@@ -63,6 +62,7 @@ let biciPiuLeggera = bici[0];
 // });
 
 // Metodo 2 con filter*********************************
+let biciPiuLeggera = bici[0];
 
 const newBici = bici.filter((element) =>{
     if((element.peso) < biciPiuLeggera.peso){
@@ -70,6 +70,16 @@ const newBici = bici.filter((element) =>{
     }
     return element;
 });
+
+console.log(biciPiuLeggera)
+
+// const newBici = bici.sort(function(a, b){
+//     return a.peso - b.peso;
+// })
+
+// let biciPiuLeggera = newBici[0];
+
+console.log(biciPiuLeggera)
 
 console.log(
     `Il risultato è la bici ${biciPiuLeggera.nome} che ha un peso di ${biciPiuLeggera.peso} kg`);
