@@ -32,3 +32,8 @@ h1{
     flex-direction:column;
 }
 
+.weight-color{
+    color: darkgreen;
+    font-size: 12px;
+}
+

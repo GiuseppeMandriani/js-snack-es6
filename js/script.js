@@ -98,7 +98,7 @@ for(let i = 1; i < bici.length; i++) {
 
 const template = document.getElementById('weight');
 
-const templateList = document.getElementById('list')
+const templateList = document.getElementById('list');
 
 template.innerHTML = `
 <span class="bici">La bici con il peso inferiore è la: ${biciLeggera.nome}</span>

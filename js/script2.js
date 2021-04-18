@@ -1,6 +1,6 @@
 console.log('Esercizi Rifatti Script 2');
 
-console.log('Snack 1');
+console.log('*****Snack 1*******');
 /****
  * Snack 1
  * Creare un array di oggetti: 
@@ -75,6 +75,29 @@ console.log(
     `Il risultato è la bici ${biciPiuLeggera.nome} che ha un peso di ${biciPiuLeggera.peso} kg`);
 
 
+// Stampa a schermo del risultato 
+
+const templateList = document.getElementById('list');
+
+const template = document.getElementById('result');
+
+
+templateList.innerHTML = `
+<h3>Modelli</h3>
+<h4>${biciUno.nome} <span class="weight-color">Peso:${biciUno.peso}kg</span></h4>
+<h4>${biciDue.nome} <span class="weight-color">Peso:${biciDue.peso}kg</span></h4>
+<h4>${biciTre.nome} <span class="weight-color">Peso:${biciTre.peso}kg</span></h4>
+<h4>${biciQuattro.nome} <span class="weight-color">Peso:${biciQuattro.peso}kg</span></h4>`
+
+
+template.innerHTML = `
+<span class="bici">La bici con il peso inferiore è la: ${biciPiuLeggera.nome}</span>
+<div>
+    <span>Il suo peso è di ${biciPiuLeggera.peso}kg</span>
+</div>`
+;
+
+
     /**
  * 
  * // Snack 2
@@ -88,7 +111,7 @@ console.log(
  */
 
 
-    console.log('Snack 2');
+    console.log('**********Snack 2 **********');
 
 // FASE 1 CREAZIONE Array
 
@@ -165,9 +188,35 @@ const updateTeams = newArrayMap.map((element)=>{
     };
 });
 
+
 console.table(updateTeams); // Classifica con nome squadra e falli fatti
 
 
+
+
+
+
+// Stampa a schermo
+
+const squadre = document.getElementById('name');
+
+const points = document.getElementById('points');
+
+ squadre.innerHTML = `
+ <h3>Squadre</h3>
+ <span>${newArrayMap[0].name}</span>
+ <span>${newArrayMap[1].name}</span>
+ <span>${newArrayMap[2].name}</span>
+ <span>${newArrayMap[3].name}</span>
+ `
+
+ points.innerHTML = `
+ <h3>Punteggio</h3>
+ <span>${newArrayMap[0].points}</span>
+ <span>${newArrayMap[1].points}</span>
+ <span>${newArrayMap[2].points}</span>
+ <span>${newArrayMap[3].points}</span>
+ `
 
 
 
@@ -183,8 +232,12 @@ console.table(updateTeams); // Classifica con nome squadra e falli fatti
  * 
  */
 
+console.log('***********Snack 3**********')
+
 
 // Fase 1 Creazione Array 
+
+
 
 const myArray = ['Paolo', 'Fabio', 'Lorenzo','Luca','Giuseppe','Aldo'];
 
@@ -206,6 +259,10 @@ let max= parseInt(prompt('Inserisci un numero tra 0 e 5'));
 while(isNaN(max) || max < min || max > myArray.length){
     min = parseInt(prompt('Inserisci un numero tra 0 e 5'));
 };
+
+console.log('Primo numero inserito: ', min);
+
+console.log('Secondo numero inserito: ', max)
 
 
 // Metodo Filter ***************
@@ -240,6 +297,47 @@ console.log(neArr);
  * - si aggiunga a ciascun elemento una ulteriore proprietà che indichi il costo del prodotto.
  * - Per inserire il costo del singolo prodotto si scriva una funzione che generi un numero random da 10 a 50 (potete sfruttare il map per aggiungere la nuova proprietà)
  */
+
+// FASE 1  Creazione array 
+
+
+console.log("*******Snack 4********")
+
+const objects = [
+    { 
+        name: 'summer',
+        type: 'tshirt',
+        color: '#00aabb',
+    },
+    { 
+        name: 'spring',
+        type: 'sunglasses',
+        color: '#00aaff',
+    },
+    { 
+        name: 'Dev',
+        type: 'shoes',
+        color: '#bbccbb',
+    },
+    { 
+        name: 'Dress',
+        type: 'bag',
+        color: '#ffaacc',
+    },
+];
+
+
+
+const newObjectsPrice = objects.map((element) =>{
+    const newElement = {
+        ...element,
+        price : randomNumber(10,50),
+    };
+
+    return newElement;
+});
+
+console.table(newObjectsPrice);
 
 
 
